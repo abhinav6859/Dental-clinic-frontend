@@ -136,18 +136,6 @@ const Navbar = () => {
                       Contact
                     </NavLink>
                   </li>
-                  {user && (
-                    <li className="font-bold">
-                      <NavLink
-                        to="/dashboard"
-                        style={({ isActive }) =>
-                          isActive ? activeStyle : undefined
-                        }
-                      >
-                        Dashboard
-                      </NavLink>
-                    </li>
-                  )}
                   <li className="font-bold">
                     {user ? (
                       <button onClick={logout}>Logout</button>
