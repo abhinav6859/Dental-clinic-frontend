@@ -4,7 +4,6 @@ import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   // navbar sticky to when scroll start
-  const user = { email: "test@example.com" };
   const [stickyClass, setStickyClass] = useState("relative");
 
   useEffect(() => {
@@ -137,10 +136,7 @@ const Navbar = () => {
                     </NavLink>
                   </li>
                   <li className="font-bold">
-                    {user ? (
-                      <button onClick={logout}>Logout</button>
-                    ) : (
-                      <NavLink
+                    <NavLink
                         to="login"
                         style={({ isActive }) =>
                           isActive ? activeStyle : undefined
@@ -148,7 +144,6 @@ const Navbar = () => {
                       >
                         Login
                       </NavLink>
-                    )}
                   </li>
                 </ul>
               </div>
