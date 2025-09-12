@@ -1,13 +1,10 @@
-    import React from "react";
+import React from "react";
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { useAuthState } from "react-firebase-hooks/auth";
-import auth from "../../firebase.init";
-import { signOut } from "firebase/auth";
-import Loading from "../shared/Loading";
 
 const Navbar = () => {
   // navbar sticky to when scroll start
+  const user = { email: "test@example.com" };
   const [stickyClass, setStickyClass] = useState("relative");
 
   useEffect(() => {
@@ -28,14 +25,9 @@ const Navbar = () => {
   };
   // navbar sticky to when scroll end
   const [checkbox, setCheckbox] = useState(false);
-  const [user, loading] = useAuthState(auth);
 
-  if (loading) {
-    return <Loading />;
-  }
 
   const logout = () => {
-    signOut(auth);
     localStorage.removeItem("accessToken");
   };
 

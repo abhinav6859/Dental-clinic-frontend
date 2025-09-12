@@ -1,11 +1,9 @@
 import React from "react";
 import { format } from "date-fns";
-import auth from "../../firebase.init";
-import { useAuthState } from "react-firebase-hooks/auth";
 import { toast } from "react-toastify";
 
 const Booking = ({ treatment, date, setTreatment, refetch }) => {
-  const [user] = useAuthState(auth);
+  const user = { email: "test@example.com" }; 
   const formatedDate = format(date, `PP`);
   const { _id, name, slots } = treatment;
 

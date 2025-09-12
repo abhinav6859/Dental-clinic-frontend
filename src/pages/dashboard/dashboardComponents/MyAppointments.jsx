@@ -1,14 +1,13 @@
-import { useAuthState } from "react-firebase-hooks/auth";
 import { useQuery } from "@tanstack/react-query";
-import auth from "../../../firebase.init";
 import Loading from "../../shared/Loading";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
-import { signOut } from "firebase/auth";
 import AppointmentRow from "./AppointmentRow";
 
+// Placeholder user object (replace with your own user logic)
+const user = { email: "test@example.com" };
+
 function MyAppointments() {
-  const [user] = useAuthState(auth);
   const navigate = useNavigate();
 
   const {
@@ -26,7 +25,6 @@ function MyAppointments() {
       }
     ).then((res) => {
       if (res.status === 401 || res.status === 403) {
-        signOut(auth);
         localStorage.removeItem("accessToken");
         navigate("/");
       }

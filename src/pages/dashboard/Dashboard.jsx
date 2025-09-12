@@ -1,10 +1,9 @@
 import { Outlet, Link } from "react-router-dom";
-import { useAuthState } from "react-firebase-hooks/auth";
 import useAdmin from "../../hooks/useAdmin";
-import auth from "../../firebase.init";
+
 
 const Dashboard = () => {
-  const [user] = useAuthState(auth);
+  const user = { email: "test@example.com" }; 
   const [admin] = useAdmin(user);
   return (
     <section className="bg-[#F7FAFD] border-t-2">

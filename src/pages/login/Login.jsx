@@ -1,62 +1,30 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
-import { useNavigate, useLocation } from "react-router-dom";
-import {
-  useSignInWithGoogle,
-  useSignInWithEmailAndPassword,
-} from "react-firebase-hooks/auth";
-import auth from "../../firebase.init";
-import Loading from "../shared/Loading";
-import useToken from "../../hooks/useToken";
+
+
 
 const Login = () => {
   const {
     register,
     formState: { errors },
-    handleSubmit,
+
   } = useForm();
 
-  const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
-  const [signInWithEmailAndPassword, user, loading, error] =
-    useSignInWithEmailAndPassword(auth);
-
-  const [token] = useToken(user || gUser);
 
   let signInError;
-  const location = useLocation();
-  const navigate = useNavigate();
 
-  let from = location.state?.from?.pathname || "/";
 
-  useEffect(() => {
-    if (token) {
-      navigate(from, { replace: true });
-    }
-  }, [token, from, navigate]);
 
-  if (loading || gLoading) {
-    return <Loading />;
-  }
 
-  if (error || gError) {
-    signInError = (
-      <p className="text-warning text-sm">
-        {error?.message || gError?.message}
-      </p>
-    );
-  }
 
-  const onSubmit = (data) => {
-    signInWithEmailAndPassword(data.email, data.password);
-  };
 
   return (
     <div className="flex px-2 pt-8 pb-16 justify-center items-center">
       <div className="card w-96 bg-base-100 shadow-lg border-2">
         <div className="card-body">
           <h2 className="text-center text-2xl font-bold">Login</h2>
-          <form onSubmit={handleSubmit(onSubmit)}>
+          <form >
             {/* Email Input filed start */}
             <div className="form-control w-full max-w-xs">
               <label className="label">
@@ -146,8 +114,7 @@ const Login = () => {
           <div className="divider">OR</div>
           <button
             className="btn btn-outline"
-            onClick={() => signInWithGoogle()}
-          >
+        >
             Continue with Google
           </button>
         </div>
