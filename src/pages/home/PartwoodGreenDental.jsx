@@ -1,5 +1,8 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 import { FaTooth, FaUserMd, FaMoneyBillWave, FaCalendarCheck } from "react-icons/fa";
+
+
 
 const cards = [
   {
@@ -9,6 +12,7 @@ const cards = [
     button: "READ MORE",
      backgroundColor: "bg-cyan-300",
       icon: <FaTooth className="text-white text-2xl" />,
+          link: "/Services",
   },
   {
     title: "Dental Care",
@@ -17,6 +21,7 @@ const cards = [
     button: "READ MORE",
       backgroundColor: "bg-cyan-400",
        icon: <FaUserMd className="text-white text-2xl" />,
+       link: "/dentalcare",
   },
   {
     title: "Payment Option",
@@ -31,11 +36,19 @@ const cards = [
     description:
       "Consultation is by appointment only. To book now call Parkwood Green Dental on (03) 9449 4100 and we will ensure you get the country’s best dental care.",
     button: "BOOK NOW",
+   
       backgroundColor: "bg-cyan-600",
             icon: <FaCalendarCheck className="text-white text-2xl" />,
+              link: "/Appointment",
   },
 ];
 const PartwoodGreenDental = () => {
+
+
+   const navigate = useNavigate();
+
+
+
   return (
 
  <div className="w-full bg-white py-12 px-6">
@@ -62,7 +75,9 @@ const PartwoodGreenDental = () => {
             <p className="mt-3 text-sm text-center">{card.description}</p>
 
             {/* Button */}
-            <button className="mt-6 px-5 py-2 bg-white text-black font-semibold rounded shadow 
+            <button
+             onClick={() => card.link && navigate(card.link)}
+            className="mt-6 px-5 py-2 bg-white text-black font-semibold rounded shadow 
                                hover:bg-gray-200 active:bg-gray-300 transition">
               {card.button}
             </button>

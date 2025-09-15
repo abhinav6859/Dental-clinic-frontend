@@ -19,7 +19,7 @@ import Users from "./pages/dashboard/dashboardComponents/Users";
 import AddDoctor from "./pages/dashboard/dashboardComponents/AddDoctor";
 import ManageDoctors from "./pages/dashboard/dashboardComponents/ManageDoctors";
 import BlogPage from "./pages/blog/BlogPage";
-
+import DentalCare from "./pages/ser/Dentalcare";
 function App() {
   return (
     <div>
@@ -77,6 +77,7 @@ function App() {
         <Route path="contact" element={<Contact />} />
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
+        <Route path="dentalcare" element={<DentalCare />} />
       </Routes>
       <ToastContainer />
       <Footer />

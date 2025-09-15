@@ -24,7 +24,9 @@ const Navbar = () => {
   };
   // navbar sticky to when scroll end
   const [checkbox, setCheckbox] = useState(false);
+ const [isOpen, setIsOpen] = useState(false);
 
+ 
 
   const logout = () => {
     localStorage.removeItem("accessToken");
@@ -87,15 +89,17 @@ const Navbar = () => {
           {/* md and lg navigation start*/}
           <div>
             <Link to="/">
-              <h2 className="text-4xl font-bold text-accent hover:text-blue-700 transition">Dentelo.</h2>
+              <h2 className="text-4xl font-bold text-accent hover:text-blue-700 transition transform duration-300 ease-in-out 
+             hover:scale-125">Dentelo.</h2>
             </Link>
           </div>
 
           <div className="hidden md:block">
             <div className="flex justify-between items-center md:gap-4 lg:gap-16">
               <div>
-                <ul className="flex md:gap-3 lg:gap-6">
-                  <li className="font-bold">
+                <ul className="flex md:gap-3 lg:gap-6 relative font-bold ">
+                  <li className="font-bold transition transform duration-300 ease-in-out 
+             hover:scale-125 ">
                     <NavLink
                       to="/home"
                       style={({ isActive }) =>
@@ -105,7 +109,8 @@ const Navbar = () => {
                       Home
                     </NavLink>
                   </li>
-                  <li className="font-bold">
+                  <li className="font-bold transition transform duration-300 ease-in-out 
+             hover:scale-125">
                     <NavLink
                       to="about"
                       style={({ isActive }) =>
@@ -115,7 +120,76 @@ const Navbar = () => {
                       About
                     </NavLink>
                   </li>
-                  <li className="font-bold">
+                <li
+  className="font-bold transition transform duration-300 ease-in-out 
+             hover:scale-125 relative"
+  onMouseEnter={() => setIsOpen(true)}
+  onMouseLeave={() => setIsOpen(false)}
+>
+  <NavLink
+    to="services"
+    style={({ isActive }) => (isActive ? activeStyle : undefined)}
+  >
+    Services
+  </NavLink>
+
+  {isOpen && (
+    <ul className="absolute top-6 left-0 bg-blue-200 shadow-lg rounded-lg w-40 py-2 z-30"
+     
+     onClick={() => setIsOpen(false)}
+    >
+      <li className="px-1 py-1 hover:bg-gray-100 cursor-pointer">
+        <NavLink to="/dentalcare">Dental Care</NavLink>
+      </li>
+      <li className="px-1 py-1 hover:bg-gray-100">
+        <NavLink to="/service2">Comprehensive Exams</NavLink>
+      </li>
+      <li className="px-1 py-1 hover:bg-gray-100">
+        <NavLink to="/service3">Teeth Whitening</NavLink>
+      </li>
+      <li className="px-1 py-1 hover:bg-gray-100">
+        <NavLink to="/service4">Service 4</NavLink>
+      </li>
+      <li className="px-1 py-1 hover:bg-gray-100">
+        <NavLink to="/service5">Service 5</NavLink>
+      </li>
+      <li className="px-1 py-1 hover:bg-gray-100">
+        <NavLink to="/service6">Service 6</NavLink>
+      </li>
+        <li className="px-1 py-1 hover:bg-gray-100">
+        <NavLink to="/service7">Service 7</NavLink>
+      </li>
+      <li className="px-1 py-1 hover:bg-gray-100">
+        <NavLink to="/service8">Service 8</NavLink>
+      </li>
+      <li className="px-1 py-1 hover:bg-gray-100">
+        <NavLink to="/service9">Service 9</NavLink>
+      </li>
+      <li className="px-1 py-1 hover:bg-gray-100">
+        <NavLink to="/service10">Service 10</NavLink>
+      </li>
+      <li className="px-1 py-1 hover:bg-gray-100">
+        <NavLink to="/service11">Service 11</NavLink>
+      </li>
+      <li className="px-1 py-1 hover:bg-gray-100">
+        <NavLink to="/service12">Service 12</NavLink>
+      </li>
+      <li className="px-1 py-1 hover:bg-gray-100">
+        <NavLink to="/service13">Service 13</NavLink>
+      </li>
+      <li className="px-1 py-1 hover:bg-gray-100">
+        <NavLink to="/service14">Service 14</NavLink>
+      </li>
+     
+      
+      
+    </ul>
+  )}
+</li>
+
+                  <li className="font-bold transition transform duration-300 ease-in-out 
+             hover:scale-125">
+                    
                     <NavLink
                       to="blogs"
                       style={({ isActive }) =>
@@ -125,7 +199,8 @@ const Navbar = () => {
                       Blogs
                     </NavLink>
                   </li>
-                  <li className="font-bold">
+                  <li className="font-bold transition transform duration-300 ease-in-out 
+             hover:scale-125">
                     <NavLink
                       to="contact"
                       style={({ isActive }) =>
@@ -135,7 +210,8 @@ const Navbar = () => {
                       Contact
                     </NavLink>
                   </li>
-                  <li className="font-bold">
+                  <li className="font-bold transition transform duration-300 ease-in-out 
+             hover:scale-125">
                     <NavLink
                         to="login"
                         style={({ isActive }) =>
@@ -151,8 +227,9 @@ const Navbar = () => {
               <div>
                 <Link
                   to="appointment"
-                  className="btn rounded-md text-base-100 text-sm uppercase bg-gradient-to-r from-accent to-primary px-3 md:px-5"
-                >
+                  className="btn rounded-md text-base-100 text-sm uppercase bg-gradient-to-r from-accent to-primary px-3 md:px-5
+               transition transform duration-300 ease-in-out 
+             hover:scale-125 ">
                   BOOK APPOINTMENT
                 </Link>
               </div>
@@ -191,6 +268,10 @@ const Navbar = () => {
                 </li>
                 <li className="font-bold">
                   <NavLink to="/about">About Us</NavLink>
+                </li>
+                  <li className="font-bold ">
+                  <NavLink to="/services">Services</NavLink>
+                 
                 </li>
                 <li className="font-bold">
                   <NavLink to="blogs">Blogs</NavLink>

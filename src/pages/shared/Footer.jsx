@@ -116,7 +116,7 @@ const Footer = () => {
       <div className="p-4 bg-[#222] text-base-100">
         <div className="flex justify-center items-center">
           <p className="text-xs">
-            Copyright © 2022 - All right reserved: mail.nayimhossen@gmail.com
+            Copyright © 2022 Dentelo. All Rights Reserved.
           </p>
         </div>
       </div>

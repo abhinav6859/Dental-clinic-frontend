@@ -22,7 +22,7 @@ const Review = () => {
       _id: 2,
       comment:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente earum ab cupiditate autem accusantium expedita sequi.",
-      name: "Nayim Hossen",
+      name: "Abhinav Vats",
       location: "Mymensingh",
       img: "http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/homepage4/user3.png",
     },

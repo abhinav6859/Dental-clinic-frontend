@@ -6,7 +6,7 @@ const BookAppiontment = () => {
     <section className="bg-accent pt-5 mb-10" aria-label="cta">
       <div className="grid md:grid-cols-2 justify-center items-center px-5 gap-5 container mx-auto">
         <div>
-          <img src={doctor} className="mt-[-110px] w-100" alt="cta banner" />
+          <img src={doctor} className="mt-10px w-100" alt="cta banner" />
         </div>
 
         <div>
