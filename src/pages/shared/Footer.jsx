@@ -48,7 +48,7 @@ const Footer = () => {
               </li>
               <li className="flex justify-start text-neutral gap-1 mb-3 hover:text-base-100">
                 <i className="ri-add-line text-primary"></i>
-                <Link to="/blog">Blogs</Link>
+                <Link to="/blogs">Blogs</Link>
               </li>
               <li className="flex justify-start text-neutral gap-1 mb-3 hover:text-base-100">
                 <i className="ri-add-line text-primary"></i>

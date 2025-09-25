@@ -20,6 +20,8 @@ import AddDoctor from "./pages/dashboard/dashboardComponents/AddDoctor";
 import ManageDoctors from "./pages/dashboard/dashboardComponents/ManageDoctors";
 import BlogPage from "./pages/blog/BlogPage";
 import DentalCare from "./pages/ser/Dentalcare";
+import ServiceDetail from "../src/pages/ser/ServiceDetail";
+import Servi from "../src/pages/home/Services";
 function App() {
   return (
     <div>
@@ -71,13 +73,14 @@ function App() {
             }
           />
         </Route>
-
+        <Route path="services" element={<Servi />} />
         <Route path="review" element={<Reviews />} />
         <Route path="blogs" element={<BlogPage />} />
         <Route path="contact" element={<Contact />} />
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
         <Route path="dentalcare" element={<DentalCare />} />
+         <Route path="/services/:id" element={<ServiceDetail />} />
       </Routes>
       <ToastContainer />
       <Footer />

@@ -1,7 +1,10 @@
 import React from "react";
 import aboutBanner from "./../../assets/images/about-banner.png";
+import { useNavigate } from "react-router-dom";
 
 const AboutSection = () => {
+  const navigate = useNavigate();
+
   return (
     <section aria-label="aboutSection" className="py-16">
       <div className="grid lg:grid-cols-2 justify-center items-center px-5 gap-2 container mx-auto">
@@ -38,7 +41,9 @@ const AboutSection = () => {
               accumsan nunc lectus eu lectus.
             </p>
 
-            <button className="btn text-base-100 uppercase font-bold bg-gradient-to-r from-accent to-primary">
+            <button className="btn text-base-100 uppercase font-bold bg-gradient-to-r from-accent to-primary"
+            onClick={() => navigate("/about")}
+            >
               read more
             </button>
           </div>

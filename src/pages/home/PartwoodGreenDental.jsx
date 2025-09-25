@@ -10,7 +10,7 @@ const cards = [
     description:
       "With a gentle and professional approach, we provide all our patients with high-quality, long lasting dental care. We hope to change people’s perceptions of dentistry.",
     button: "READ MORE",
-     backgroundColor: "bg-cyan-300",
+     backgroundColor: "bg-gradient-to-r from-teal-400 via-green-400 to-lime-400 ",
       icon: <FaTooth className="text-white text-2xl" />,
           link: "/Services",
   },
@@ -51,8 +51,8 @@ const PartwoodGreenDental = () => {
 
   return (
 
- <div className="w-full bg-white py-12 px-6">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
+ <div className="w-full rounded-md text-base-100 text-xs lg:text-sm uppercase bg-gradient-to-r from-accent to-primary py-12 px-6">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 ">
         {cards.map((card, index) => (
           <div
             key={index}
