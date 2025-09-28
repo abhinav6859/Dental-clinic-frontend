@@ -27,11 +27,7 @@ const Blog = ({ blog }) => {
         <p className="text-[16px] text-natural font-medium pb-4 ">
           {description}
         </p>
-        <div className="card-actions justify-start">
-          <button className="btn text-base-100 uppercase font-bold bg-gradient-to-r from-accent to-primary">
-            Read More
-          </button>
-        </div>
+        
       </div>
     </div>
   );

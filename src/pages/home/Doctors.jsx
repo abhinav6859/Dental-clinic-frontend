@@ -8,25 +8,25 @@ function Doctors() {
   const doctors = [
     {
       _id: 1,
-      name: "Dr. AR Rahaman",
+      name: "Dr. Abhinav Vats",
       designation: "Dentist",
       img: doctor1,
     },
     {
       _id: 2,
-      name: "Dr. Ibrahim Halder",
+      name: "Dr. Ram",
       designation: "Dentist",
       img: doctor2,
     },
     {
       _id: 3,
-      name: "Dr. Aklima Shikder",
+      name: "Dr. Sakshi",
       designation: "Dentist",
       img: doctor3,
     },
     {
-      _id: 3,
-      name: "Dr. Janifer Tulshi",
+      _id: 4,
+      name: "Dr. Anjali",
       designation: "Dentist",
       img: doctor4,
     },

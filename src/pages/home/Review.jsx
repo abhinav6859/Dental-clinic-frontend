@@ -1,6 +1,5 @@
 // import Swiper core and required modules
 import { Autoplay, A11y } from "swiper";
-import { AiFillStar } from "react-icons/ai";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -10,58 +9,58 @@ import "swiper/css/pagination";
 
 const Review = () => {
   const reviews = [
-    {
-      _id: 1,
-      comment:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente earum ab cupiditate autem accusantium expedita sequi.",
-      name: "Shakib Al",
-      location: "Dhaka",
-      img: "http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/homepage4/user3.png",
-    },
-    {
-      _id: 2,
-      comment:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente earum ab cupiditate autem accusantium expedita sequi.",
-      name: "Abhinav Vats",
-      location: "Mymensingh",
-      img: "http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/homepage4/user3.png",
-    },
-    {
-      _id: 3,
-      comment:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente earum ab cupiditate autem accusantium expedita sequi.",
-      name: "Moman Mia",
-      location: "Borishal",
-      img: "http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/homepage4/user3.png",
-    },
-    {
-      _id: 4,
-      comment:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente earum ab cupiditate autem accusantium expedita sequi.",
-      name: "Salma Akther",
-      location: "Mymensingh",
-      img: "http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/homepage4/user3.png",
-    },
-    {
-      _id: 5,
-      comment:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente earum ab cupiditate autem accusantium expedita sequi.",
-      name: "Janifer",
-      location: "Mirpur-2",
-      img: "http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/homepage4/user3.png",
-    },
-    {
-      _id: 6,
-      comment:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente earum ab cupiditate autem accusantium expedita sequi.",
-      name: "Shoriful Islam",
-      location: "Shambhuganj",
-      img: "http://wp.alithemes.com/html/jobbox/demos/assets/imgs/page/homepage4/user3.png",
-    },
+     {
+    _id: 1,
+    comment:
+      "The dentist explained everything so clearly and made me feel very comfortable. My tooth extraction was quick and painless!",
+    name: "Aarav Sharma",
+    location: "Delhi",
+    img: "https://randomuser.me/api/portraits/men/32.jpg",
+  },
+  {
+    _id: 2,
+    comment:
+      "Super clean clinic with friendly staff. I got my teeth whitening done here and the results were amazing. Highly recommend!",
+    name: "Priya Mehta",
+    location: "Mumbai",
+    img: "https://randomuser.me/api/portraits/women/45.jpg",
+  },
+  {
+    _id: 3,
+    comment:
+      "I was nervous before my root canal, but the doctor made sure I was at ease. The entire process was smooth and pain-free.",
+    name: "Rohit Verma",
+    location: "Bangalore",
+    img: "https://randomuser.me/api/portraits/men/76.jpg",
+  },
+  {
+    _id: 4,
+    comment:
+      "Very professional and caring dentist. My kids had a great experience during their first dental checkup. Will definitely come again.",
+    name: "Neha Singh",
+    location: "Pune",
+    img: "https://randomuser.me/api/portraits/women/21.jpg",
+  },
+  {
+    _id: 5,
+    comment:
+      "The dentist used modern equipment and explained every step. I got a dental implant and it feels just like my natural tooth.",
+    name: "Karan Patel",
+    location: "Ahmedabad",
+    img: "https://randomuser.me/api/portraits/men/51.jpg",
+  },
+  {
+    _id: 6,
+    comment:
+      "Excellent service! The staff is so polite and professional. I recommend this clinic to anyone looking for quality dental care.",
+    name: "Salma Akther",
+    location: "Hyderabad",
+    img: "https://randomuser.me/api/portraits/women/68.jpg",
+  },
   ];
   return (
     <Swiper
-      // install Swiper modules
+     
       modules={[Autoplay, A11y]}
       spaceBetween={30}
       slidesPerView={1}
