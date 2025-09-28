@@ -10,7 +10,7 @@ const cards = [
     description:
       "With a gentle and professional approach, we provide all our patients with high-quality, long lasting dental care. We hope to change people’s perceptions of dentistry.",
     button: "READ MORE",
-     backgroundColor: "bg-gradient-to-r from-teal-400 via-green-400 to-lime-400 ",
+     backgroundColor: "bg-cyan-500 ",
       icon: <FaTooth className="text-white text-2xl" />,
           link: "/Services",
   },
@@ -19,7 +19,7 @@ const cards = [
     description:
       "Parkwood Green Dental hopes to be your number one choice for all your emergency dental care needs. Our team of expert dentists are always here to help you.",
     button: "READ MORE",
-      backgroundColor: "bg-cyan-400",
+      backgroundColor: "bg-cyan-600",
        icon: <FaUserMd className="text-white text-2xl" />,
        link: "/dentalcare",
   },
@@ -28,7 +28,7 @@ const cards = [
     description:
       "We shall collaborate with you to pinpoint the most suitable payment options. Not only do we accept all private health insurers, but under the Medicare Child Dental...",
     button: "READ MORE",
-      backgroundColor: "bg-cyan-500",
+      backgroundColor: "bg-cyan-700",
          icon: <FaMoneyBillWave className="text-white text-2xl" />,
   },
   {
@@ -37,7 +37,7 @@ const cards = [
       "Consultation is by appointment only. To book now call Parkwood Green Dental on (03) 9449 4100 and we will ensure you get the country’s best dental care.",
     button: "BOOK NOW",
    
-      backgroundColor: "bg-cyan-600",
+      backgroundColor: "bg-cyan-800",
             icon: <FaCalendarCheck className="text-white text-2xl" />,
               link: "/Appointment",
   },

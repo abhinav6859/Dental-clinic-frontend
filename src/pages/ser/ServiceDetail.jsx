@@ -26,8 +26,8 @@ const ServiceDetail = () => {
           
             ">
              <div
-  className="w-full bg-blue-500 text-white p-6 rounded-2xl shadow-md
-             hover:bg-blue-600 hover:shadow-xl hover:-translate-y-1
+  className="w-full bg-gradient-to-r bg-sky-700   text-white p-6 rounded-2xl shadow-md
+            hover:shadow-xl hover:-translate-y-1
              transition-all duration-300 ease-in-out"
 >
         <h3 className="text-lg ">What can we offer you?</h3>

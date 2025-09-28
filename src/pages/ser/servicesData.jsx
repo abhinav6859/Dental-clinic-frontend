@@ -1,16 +1,21 @@
 
 import image from '../../assets/images/LAUGHING-GAS.png';
+import image1 from'../../assets/images/123.jpeg';
 import image2 from '../../assets/images/wisdom.png';
 import image3 from '../../assets/images/Preventive-Care.jpg';
 import image4 from '../../assets/images/Dentures.jpg';
 import image5 from '../../assets/images/BRIDGE.jpg';
+import image6 from '../../assets/images/Whitening-Zoom.jpg';
+import image7 from '../../assets/images/Orthodontics.jpg';
+import image8 from '../../assets/images/dentisrry.webp';
+import image9 from '../../assets/images/crown.png';
 
 const servicesData = [
   {
     id: 1,
     title: 'Dental Care',
     discription: 'Comprehensive dental care services for all ages.',
-    img: 'path/to/dental-care-image.jpg',
+    img: image1,
     link: '/dentalcare',
   },
  {
@@ -145,17 +150,137 @@ const servicesData = [
   ),
 }
 ,
-  {
-    id: 4,
-    title: 'UI/UX Design',
-    discription: 'Designing user-friendly interfaces and experiences.',
-    img: '..',
-  },
+ {
+  id: 4,
+  title: "Invisalign®",
+  discription: "Invisalign® is a modern orthodontic treatment that uses clear, removable aligners to straighten teeth discreetly and comfortably.",
+  img: image2, 
+  
+  details: (
+    <div className="space-y-6">
+
+      <h2 className="text-xl font-semibold text-blue-600">
+        Complete Invisalign® Treatment in Hillside
+      </h2>
+
+      <p className="text-gray-700 leading-relaxed">
+        Think metal braces look unappealing? Want a reliable solution to straighten
+        your crooked teeth without any discomfort? Clear aligners by Invisalign®
+        are a great choice for patients whose teeth have misaligned with age or
+        anyone who wants an alternative over conventional braces.
+      </p>
+
+      <p className="text-gray-700 leading-relaxed">
+        At <span className="font-semibold text-blue-600">Parkwood Green Dental</span>,
+        we provide hassle-free Invisalign® treatment to patients residing in Hillside,
+        helping them bring their smile in good shape. Get in touch to book your
+        appointment today.
+      </p>
+
+      {/* Reliable Care */}
+      <h2 className="text-2xl font-semibold text-gray-900">
+        Get Reliable Invisalign® Treatment in Hillside
+      </h2>
+      <p className="text-gray-700 leading-relaxed">
+        As one of Melbourne’s trusted dental practices, Parkwood Green Dental has
+        been providing Invisalign® treatment to patients across key suburbs. High
+        quality and affordable, our professionals utilise medical-grade tools and
+        technology in dentistry to carry out your treatment.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        For years, we have conducted several successful Invisalign® treatments and
+        can curate a tailored treatment plan to suit your individual needs.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Our practice in Melbourne is centrally located and has a comfortable and
+        homely atmosphere. All our dentists, hygienists, and clinical staff are
+        highly professional yet friendly and caring. We also provide appointments
+        on Saturdays to suit your convenience so you can visit at your leisure for
+        your Invisalign® treatment.
+      </p>
+
+      {/* Process */}
+      <p className="text-gray-700 leading-relaxed">
+        Our dentists take alginate impressions and send them to the laboratory.
+        This helps us visualise your smile before we begin with the procedure.
+      </p>
+
+      {/* What are Invisalign® aligners */}
+      <h2 className="text-2xl font-semibold text-gray-900">
+        What are Invisalign® aligners?
+      </h2>
+      <p className="text-gray-700 leading-relaxed">
+        Invisalign® is a patented orthodontic treatment that uses transparent trays
+        that fit comfortably to align your teeth similar to braces. Often
+        recommended by dentists, Invisalign® aligners are a good alternative for
+        patients that need to straighten their teeth without opting for conventional
+        braces.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Nearly invisible once put on, these aligners work to straighten your
+        irregular or crooked teeth — thus the name Invisalign®.
+      </p>
+
+      {/* Why Invisalign® */}
+      <h2 className="text-2xl font-semibold text-gray-900">
+        Why pick Invisalign® over conventional braces?
+      </h2>
+      <p className="text-gray-700 leading-relaxed">
+        Compared to traditional orthodontic options like metal braces, aligners by
+        Invisalign® are clear, comfortable, and removable. This makes it a promising
+        choice for anyone seeking a hassle-free orthodontic teeth straightening
+        solution.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        The aligners are essentially made of a unique plastic-like material and can
+        be removed on occasions like meals, brushing, and flossing. This gives
+        patients a form of convenience that’s not possible with traditional braces.
+        Unlike braces, clear aligners can also be customised to suit the needs of
+        patients.
+      </p>
+
+      {/* Procedure */}
+      <h2 className="text-2xl font-semibold text-gray-900">
+        What happens during the procedure?
+      </h2>
+      <p className="text-gray-700 leading-relaxed">
+        Initially, our dentists take high-quality photographs and send them ahead to
+        the laboratory following which we receive the before & after photos from the
+        lab. We then share them with the patient and make a decision whether they
+        are an ideal candidate for the treatment.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        If yes, then on the basis of your impressions, we chart out a tailored plan.
+        Depending on the mould of your teeth, your aligners are accordingly created.
+      </p>
+
+      {/* Duration */}
+      <h2 className="text-2xl font-semibold text-gray-900">
+        How long will the whole treatment take?
+      </h2>
+      <p className="text-gray-700 leading-relaxed">
+        The duration of the treatment depends on several factors and needs of the
+        patient. Ideally, the treatment could vary based on your present oral health
+        and the dental conditions you have (for instance gapped teeth.) To get a
+        better idea, we recommend consulting our dentist.
+      </p>
+
+      {/* CTA */}
+      <p className="text-gray-700 font-medium">
+        At Parkwood Green Dental we always make it a priority to ensure our patients
+        receive the dental care they best deserve. Reach out to our friendly team at
+        <span className="text-blue-600"> (03) 9449 4100 </span> to know how we can
+        help you best.
+      </p>
+    </div>
+  ),
+},
+
   {
   id: 5,
   title: "Laughing Gas (Nitrous Oxide)",
   img: image, 
- 
+ discription: "Laughing gas, or nitrous oxide, is a safe and effective sedative used in dentistry to help patients relax during procedures.",
   details: `
 FEEL MORE RELAXED AND COMFORTABLE IN THE DENTAL CHAIR
 
@@ -332,6 +457,310 @@ BOOK IN A CONSULTATION WITH DR. ROY HUI
         </a>
         .
       </p>
+    </div>
+  ),
+},
+
+{
+  id: 8,
+  title: "General Dentistry",
+  discription:"General dentistry is the branch of dentistry that focuses on the prevention, diagnosis, and treatment of a wide range of dental conditions and diseases affecting the teeth, gums, and overall oral health.",
+ img: image8,
+  details: (
+    <div className="space-y-6">
+      {/* Intro */}
+   
+      <h2 className="text-xl font-semibold text-blue-600">
+        Comprehensive General Dentistry Care in Hillside
+      </h2>
+
+      <p className="text-gray-700 leading-relaxed">
+        Need overall care for all your dental needs? At{" "}
+        <span className="font-semibold text-blue-600">Parkwood Green Dental</span>,
+        we diagnose, treat, and handle all aspects of your oral health in one place.
+        Whether you need routine check-ups or prompt treatment in an emergency, we
+        have you covered. Our complete set of general dentistry solutions are
+        tailored to your needs to ensure you get the best dental therapy in Hillside.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Get in touch to book an appointment today.
+      </p>
+
+      {/* Specialist Info */}
+      <h2 className="text-2xl font-semibold text-gray-900">
+        We are Your General Dentistry Specialist in Hillside
+      </h2>
+      <p className="text-gray-700 leading-relaxed">
+        Periodic dental care is the key to a healthier well-being of your teeth and
+        overall body. At Parkwood Green Dental we understand this and help you plan
+        your dental health with periodic screenings and general dentistry services.
+        By visiting us, you can effectively detect dental issues early on and treat
+        them before it’s too late.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Our practice in Hillside offers a modern, comfortable environment with
+        advanced dental instruments, tools, and technology to ensure there are no
+        compromises during your treatment.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Most importantly, our team — from dentists to hygienists — is friendly,
+        accredited, and highly experienced. We make sure you leave confident and
+        healthy after every visit.
+      </p>
+
+      {/* Services */}
+      <h2 className="text-2xl font-semibold text-gray-900">
+        General Dentistry Services We Offer in Hillside
+      </h2>
+      <ul className="list-disc list-inside space-y-2 text-gray-700">
+        <li>
+          <strong>Cleanings & Hygiene Treatment:</strong> Professional cleaning
+          treatments that prevent tartar, plaque, and decay for healthy teeth and gums.
+        </li>
+        <li>
+          <strong>Wisdom Teeth Extraction:</strong> Safe and comfortable extraction
+          to prevent infections or complications.
+        </li>
+        <li>
+          <strong>Sealants:</strong> Invisible protective sealants for children and
+          adults to help prevent cavities.
+        </li>
+        <li>
+          <strong>Root Canal Therapy:</strong> Painless procedures to repair and save
+          infected teeth while preventing extraction.
+        </li>
+        <li>
+          <strong>Emergency Dentistry Services:</strong> Prompt care for chipped
+          teeth, braces repairs, infections, and other urgent issues.
+        </li>
+      </ul>
+
+      {/* CTA */}
+      <p className="text-gray-700 leading-relaxed">
+        Have a dental requirement that can’t wait any longer? Get in touch with our
+        dentists at Parkwood Green Dental so we can help you better.
+      </p>
+
+      {/* Service Areas */}
+      <p className="text-gray-700 font-medium">
+        Our clinic is headquartered in Hillside and we cater to patients from
+        Aintree, Burnside, Cairnlea, Calder Park, Caroline Springs, Delahey, Fraser
+        Rise, Keilor, Keilor Downs, Keilor Lodge, Rockbank, St Albans, Sydenham,
+        Taylors Hill, Taylors Lakes, Watergardens, and nearby regions.
+      </p>
+    </div>
+  ),
+},
+
+{
+  id: 9,
+  title: "Zoom Teeth Whitening",
+  discription:"Zoom Teeth Whitening is a professional teeth whitening treatment that uses a special light-activated gel to effectively and safely whiten teeth, providing a brighter smile in a single session.",
+  img: image6, 
+  details: (
+    <div className="space-y-6">
+   
+      {/* Intro */}
+      <p className="text-gray-700 leading-relaxed">
+        The healthier, easier, and less complicated method of teeth whitening is{" "}
+        <span className="font-semibold text-blue-600">Zoom Teeth Whitening</span>.
+        It combines two major aspects of oral well-being. At Parkwood Green Dental,
+        we provide the best teeth whitening service at affordable rates with our
+        highly experienced dental staff. With our friendly approach, you’ll feel at
+        home while receiving professional care.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Unlike other clinics around Hillside, we focus on Zoom tooth whitening —
+        which lightens your discolored tooth enamel in a single day.
+      </p>
+
+      {/* What is Zoom Tooth Whitening */}
+      <h2 className="text-2xl font-semibold text-gray-900">
+        What is Zoom Tooth Whitening?
+      </h2>
+      <p className="text-gray-700 leading-relaxed">
+        Zoom Whitening is a professional bleaching process widely used worldwide to
+        lighten tooth enamel. Coffee, tea, cola, smoking, and certain foods can
+        cause discoloration that darkens teeth over time. Our expert dentists carry
+        out the Zoom in-office whitening procedure that safely bleaches these stains
+        without damaging your tooth structure.
+      </p>
+
+      {/* Benefits */}
+      <h2 className="text-2xl font-semibold text-gray-900">
+        Benefits of Parkwood’s Zoom Teeth Whitening
+      </h2>
+      <ul className="list-disc list-inside space-y-2 text-gray-700">
+        <li>Easier and healthier than other whitening procedures, done in one day</li>
+        <li>
+          Uses light-activated technology that gives you a healthier, vibrant smile
+        </li>
+        <li>
+          Professional dental care from our{" "}
+          <span className="font-semibold">expert dentists</span>
+        </li>
+        <li>Completely safe and highly effective treatment</li>
+        <li>
+          Available at our Hillside clinic and across surrounding areas
+        </li>
+      </ul>
+
+      {/* Why Choose */}
+      <h2 className="text-2xl font-semibold text-gray-900">
+        Why Choose Our Zoom Teeth Whitening?
+      </h2>
+      <p className="text-gray-700 leading-relaxed">
+        At Parkwood Green Dental, we use a specialised whitening formula designed to
+        brighten your teeth and enamel without side effects or harm. Our dental
+        professionals have years of experience performing safe and successful
+        Zoom whitening procedures, helping patients achieve a confident smile.
+      </p>
+
+      {/* CTA */}
+      <p className="text-gray-700 leading-relaxed font-medium">
+        To know more about our same-day Zoom teeth whitening service and to book an
+        appointment with our dental professionals, dial{" "}
+        <span className="font-bold text-blue-600">(03) 9449 4100</span>.
+      </p>
+    </div>
+  ),
+},
+{
+  id: 10,
+  title: "Orthodontics",
+  img: image7, 
+  discription:"Orthodontics is a specialized branch of dentistry that focuses on diagnosing, preventing, and treating dental and facial irregularities. It primarily deals with the alignment of teeth and jaws to improve both function and aesthetics.",
+  details: (
+    <div className="space-y-6">
+    
+     
+      <p className="text-gray-700 leading-relaxed">
+        Teeth mal-alignment may be genetic, caused by past jaw trauma, tooth
+        extraction, or childhood habits such as thumb sucking, dummies, or tongue
+        thrusting. Orthodontics (braces) help patients achieve a{" "}
+        <span className="font-semibold text-blue-600">beautiful and healthy smile</span>.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Alignment problems usually become noticeable between ages 8–14, when facial
+        and jaw growth occurs, making it the ideal time for treatment. Orthodontic
+        treatment can also be performed in adults with good dental health, although
+        teeth movement may take longer than in children.
+      </p>
+
+      {/* Benefits */}
+      <h2 className="text-2xl font-semibold text-gray-900">
+        Why Orthodontic Treatment Matters
+      </h2>
+      <ul className="list-disc list-inside space-y-2 text-gray-700">
+        <li>
+          <strong>Hygiene:</strong> Severely crowded teeth are difficult to clean,
+          leading to plaque buildup and gum disease over time.
+        </li>
+        <li>
+          <strong>Decay Prevention:</strong> Proper alignment allows toothbrushes and
+          floss to effectively remove bacteria, reducing risk of cavities.
+        </li>
+        <li>
+          <strong>Bite Correction:</strong> Proper alignment ensures biting forces are
+          evenly distributed, preventing uneven tooth wear.
+        </li>
+      </ul>
+
+      {/* Treatment Options */}
+      <h2 className="text-2xl font-semibold text-gray-900">
+        How Orthodontics Works
+      </h2>
+      <p className="text-gray-700 leading-relaxed">
+        Orthodontic treatment typically involves small metal or tooth-coloured
+        ceramic brackets glued to teeth and linked by a thin wire. Braces are
+        periodically adjusted to gently move teeth toward the desired position.
+        After braces, a clear retainer is worn to stabilise the new teeth position.
+      </p>
+      <p className="text-gray-700 leading-relaxed">
+        Treatment duration usually ranges between{" "}
+        <span className="font-semibold">24–30 months</span>, but may vary depending
+        on the severity of the case.
+      </p>
+
+      {/* Parkwood Approach */}
+      <h2 className="text-2xl font-semibold text-gray-900">
+        Our Approach at Parkwood Green
+      </h2>
+      <p className="text-gray-700 leading-relaxed">
+        At Parkwood Green Dental, we take pride in thorough patient assessment,
+        pre-treatment discussions, and detailed planning. This ensures every patient
+        understands their treatment plan and that it suits their specific needs and
+        circumstances. For convenience,{" "}
+        <span className="font-semibold">payment plans are also available</span>.
+      </p>
+    </div>
+  ),
+},
+{
+  id: 11,
+  title: "Dental Crowns",
+  img: image9, 
+  discription:"A dental crown is a tooth-shaped cap that is placed over a tooth to restore its shape, size, strength, and appearance. Crowns are used to protect weak teeth, restore broken teeth, cover dental implants, and improve the aesthetics of discolored or misshapen teeth.",
+  details: (
+    <div className="space-y-6">
+      {/* Section Header */}
+    
+      {/* Intro */}
+      <p className="text-gray-700 leading-relaxed">
+        A crown is a dental restoration that completely encircles a natural tooth,
+        restoring it to its natural form. At Parkwood Green Dental, our highly
+        reliable dentists offer excellent and affordable dental crown services in
+        Hillside.
+      </p>
+
+      {/* What is Crown Work */}
+      <h2 className="text-2xl font-semibold text-gray-900">What is Dental Crown Work?</h2>
+      <p className="text-gray-700 leading-relaxed">
+        A dental crown is a permanent restoration that restores the original shape
+        and size of a damaged tooth. The cap-like crown covers the tooth and is
+        cemented in place, replicating the look and function of your original tooth.
+      </p>
+
+      {/* Who Needs Crowns */}
+      <h2 className="text-2xl font-semibold text-gray-900">Who Needs a Dental Crown?</h2>
+      <ul className="list-disc list-inside space-y-2 text-gray-700">
+        <li>People with a weak or cracked tooth</li>
+        <li>Patients who need to restore a broken tooth</li>
+        <li>Support for a tooth with a large filling</li>
+        <li>Covering discolored or misshaped teeth</li>
+        <li>Covering a dental implant</li>
+        <li>Cosmetic modification</li>
+      </ul>
+
+      {/* Types of Crowns */}
+      <h2 className="text-2xl font-semibold text-gray-900">Types of Dental Crowns</h2>
+      <div className="space-y-4 text-gray-700 leading-relaxed">
+        <div>
+          <h3 className="text-xl font-semibold text-gray-800">Gold Crowns</h3>
+          <p>
+            Made of gold alloy, these crowns are durable and usually used for
+            posterior teeth. They require minimal preparation and can adapt
+            slightly to bite changes over time.
+          </p>
+        </div>
+        <div>
+          <h3 className="text-xl font-semibold text-gray-800">Metal-Porcelain Crowns</h3>
+          <p>
+            A popular option, combining porcelain with a strong metal substructure.
+            They provide both strength and aesthetics, making them widely used.
+          </p>
+        </div>
+        <div>
+          <h3 className="text-xl font-semibold text-gray-800">Full Porcelain Crowns</h3>
+          <p>
+            The most aesthetic option, closely mimicking the natural shading of
+            teeth. They are especially recommended for patients allergic to metal.
+          </p>
+        </div>
+      </div>
+
+      {/* CTA */}
+     
     </div>
   ),
 },

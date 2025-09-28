@@ -143,10 +143,8 @@ const Navbar = () => {
                     </NavLink>
 
                     {isOpen && (
-                      <ul 
-                        className="absolute top-6 left-0 text-base-100 text-xs lg:text-sm uppercase bg-gradient-to-r from-accent to-primary shadow-lg rounded-lg w-48 py-2  border"  style={{ zIndex: 999999 }}
-                        onMouseEnter={() => setIsOpen(true)}
-                        onMouseLeave={() => setIsOpen(false)}
+                      <ul
+                        className="absolute top-6 left-0 text-base-100 text-xs lg:text-sm uppercase bg-gradient-to-r from-accent to-primary shadow-lg rounded-lg w-48 py-2  border"
                       >
                         {services.map((service) => (
                           <li key={service.id} className="px-3 py-2 hover:bg-gray-800">
@@ -229,7 +227,7 @@ const Navbar = () => {
                 <li>
                   <details>
                     <summary>Services</summary>
-                    <ul className="pl-4">
+                    <ul className="pl-4 max-h-48 overflow-y-auto uppercase bg-blue-700 shadow-lg rounded-lg text-white border">
                       {services.map((service) => (
                         <li key={service.id}>
                           <NavLink
