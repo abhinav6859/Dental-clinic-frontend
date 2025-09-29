@@ -25,9 +25,9 @@ const Banner = () => {
               We Are Best Dental Service
             </h1>
             <p className="text-xl text-neutral mb-3 md:mb-5 lg:mb-10">
-              Donec vitae libero non enim placerat eleifend aliquam erat
-              volutpat. Curabitur diam ex, dapibus purus sapien, cursus sed nisl
-              tristique, commodo gravida lectus non.
+       
+We’re dedicated to making your dental experience comfortable, stress-free, and personalized. 
+From regular check-ups to advanced treatments, our caring team is here to keep your smile healthy and confident.
             </p>
 
             <form

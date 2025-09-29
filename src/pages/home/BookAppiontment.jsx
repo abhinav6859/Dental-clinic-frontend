@@ -16,12 +16,13 @@ const BookAppiontment = () => {
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-base-100 mb-2 md:mb-4 lg:mb-6">
             We Are open And Welcoming Patients
           </h1>
-          <p className="text-base-100 mb-5">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-            earum ab cupiditate autem accusantium expedita sequi, temporibus,
-            aut illo doloribus quaerat explicabo, assumenda consectetur est vel
-            ad sed maiores doloremque consequatur.
-          </p>
+       <p className="text-base-100 mb-5">
+  Booking your dental appointment has never been easier.
+   Our friendly team is ready to provide personalized care for patients of all ages. 
+   Whether it’s a routine check-up, cleaning, or specialized treatment, we ensure a safe, comfortable,
+    and efficient experience every time.
+</p>
+
           <Link
             to="/appointment"
             className="btn text-base-100 uppercase font-bold bg-gradient-to-r from-accent to-primary mb-5"

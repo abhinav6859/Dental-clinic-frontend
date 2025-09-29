@@ -27,19 +27,19 @@ const AboutSection = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-accent mb-3 md:mb-5 lg:mb-8">
               We Care For Your Dental Health
             </h1>
-            <p className="text-base text-neutral mb-5">
-              Aliquam ac sem et diam iaculis efficitur. Morbi in enim odio.
-              Nullam quis volutpat est, sed dapibus sapien. Cras condimentum eu
-              velit id tempor. Curabitur purus sapien, cursus sed nisl
-              tristique, commodo vehicula arcu.
-            </p>
+           <p className="text-base text-neutral mb-5">
+  At Parkwood Green Dental, your smile is our top priority.
+   Our team of experienced dentists is committed to providing gentle, 
+   personalized, and high-quality dental care for patients of all ages.
+    We combine modern technology with compassionate care to ensure every visit is comfortable and stress-free.
+</p>
 
-            <p className="text-base text-neutral mb-5">
-              Aliquam erat volutpat. Aliquam enim massa, sagittis blandit ex
-              mattis, ultricies posuere sapien. Morbi a dignissim enim. Fusce
-              elementum, augue in elementum porta, sapien nunc volutpat ex, a
-              accumsan nunc lectus eu lectus.
-            </p>
+<p className="text-base text-neutral mb-5">
+  Our mission is to promote lifelong dental health through preventative care, education,
+   and professional treatments in a warm and welcoming environment. We treat every patient with compassion, 
+   deliver excellence in every procedure, and build trust through honest, transparent care.
+</p>
+
 
             <button className="btn text-base-100 uppercase font-bold bg-gradient-to-r from-accent to-primary"
             onClick={() => navigate("/about")}

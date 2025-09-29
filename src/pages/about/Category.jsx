@@ -2,26 +2,26 @@ import React from "react";
 
 const Category = () => {
   const categorys = [
-    {
-      _id: 1,
-      title: "Cras accumsan nulla nec lacus ultricies placerat.",
-      icon: <i class="ri-user-2-line"></i>,
-    },
-    {
-      _id: 2,
-      title: "Dras accumsan nulla nec lacus ultricies placerat.",
-      icon: <i class="ri-notification-badge-line"></i>,
-    },
-    {
-      _id: 3,
-      title: "Seas accumsan nulla nec lacus ultricies placerat.",
-      icon: <i class="ri-home-wifi-fill"></i>,
-    },
-    {
-      _id: 4,
-      title: "Seas accumsan nulla nec lacus ultricies placerat.",
-      icon: <i class="ri-nurse-line"></i>,
-    },
+  {
+    _id: 1,
+    title: "Comprehensive Dental Check-Ups",
+    icon: <i className="ri-stethoscope-line"></i>,
+  },
+  {
+    _id: 2,
+    title: "Teeth Cleaning & Whitening",
+    icon: <i className="ri-brush-line"></i>,
+  },
+  {
+    _id: 3,
+    title: "Orthodontics & Braces",
+    icon: <i className="ri-hospital-line"></i>,
+  },
+  {
+    _id: 4,
+    title: "Emergency Dental Care",
+    icon: <i className="ri-first-aid-kit-line"></i>,
+  },
   ];
 
   return (
