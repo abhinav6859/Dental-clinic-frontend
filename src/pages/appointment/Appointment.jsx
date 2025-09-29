@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Category from "../about/Category";
 import AppointmentBanner from "./AppointmentBanner";
 import AvailableAppointment from "./AvailableAppointment";
+import Aa from "./appointment123";
 
 const Appointment = () => {
   const [date, setDate] = useState(new Date());
@@ -9,7 +9,8 @@ const Appointment = () => {
   return (
     <div className="">
       <AppointmentBanner date={date} setDate={setDate} />
-      <Category />
+     
+      <Aa />
       <AvailableAppointment date={date} setDate={setDate} />
     </div>
   );
